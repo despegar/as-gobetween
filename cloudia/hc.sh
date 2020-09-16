@@ -9,7 +9,7 @@ then
  echo -n 1 > last-hc-result.tmp
  echo -n 1 #success
 else
- echo -n 1 > last-hc-result.tmp
+ echo -n 0 > last-hc-result.tmp
  echo -n 0 #failure
 fi
 
