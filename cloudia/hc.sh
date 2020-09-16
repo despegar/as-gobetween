@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 URL=$1
 PORT=9000 #Configured in logstash config
+RESFILENAME=last-result-$URL.tmp
 
 curl -v --fail --silent --output /dev/null http://$URL:$PORT
-
-RESFILENAME=last-result-$URL.tmp
 
 if [ $? -eq 0 ]
 then
