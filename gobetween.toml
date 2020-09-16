@@ -1,6 +1,7 @@
 [api]
-enabled = true  # true | false
-bind = ":9290"  # bind host:port
+enabled = true
+bind = ":9290"
+
 
 [servers.fwsu]
  bind = "0.0.0.0:9090"
@@ -49,7 +50,7 @@ bind = ":9290"  # bind host:port
 [servers.calidad.healthcheck]
  interval = "30s"
  kind = "exec"
- exec_command = "./hc.sh"
+ exec_command = "./cache-hc.sh"
  exec_expected_positive_output = "1"
  exec_expected_negative_output = "0"
  timeout = "5s"
@@ -75,7 +76,7 @@ bind = ":9290"  # bind host:port
 [servers.platform-cancel.healthcheck]
  interval = "30s"
  kind = "exec"
- exec_command = "./hc.sh"
+ exec_command = "./cache-hc.sh"
  exec_expected_positive_output = "1"
  exec_expected_negative_output = "0"
  timeout = "5s"
@@ -101,7 +102,7 @@ bind = ":9290"  # bind host:port
 [servers.platform-transactions.healthcheck]
  interval = "30s"
  kind = "exec"
- exec_command = "./hc.sh"
+ exec_command = "./cache-hc.sh"
  exec_expected_positive_output = "1"
  exec_expected_negative_output = "0"
  timeout = "5s"
@@ -127,7 +128,7 @@ bind = ":9290"  # bind host:port
 [servers.platform-nonair.healthcheck]
  interval = "30s"
  kind = "exec"
- exec_command = "./hc.sh"
+ exec_command = "./cache-hc.sh"
  exec_expected_positive_output = "1"
  exec_expected_negative_output = "0"
  timeout = "5s"
@@ -153,7 +154,7 @@ bind = ":9290"  # bind host:port
 [servers.platform-cambios.healthcheck]
  interval = "30s"
  kind = "exec"
- exec_command = "./hc.sh"
+ exec_command = "./cache-hc.sh"
  exec_expected_positive_output = "1"
  exec_expected_negative_output = "0"
  timeout = "5s"
@@ -179,7 +180,7 @@ bind = ":9290"  # bind host:port
 [servers.platform-hoteles.healthcheck]
  interval = "30s"
  kind = "exec"
- exec_command = "./hc.sh"
+ exec_command = "./cache-hc.sh"
  exec_expected_positive_output = "1"
  exec_expected_negative_output = "0"
  timeout = "5s"
@@ -205,7 +206,7 @@ bind = ":9290"  # bind host:port
 [servers.worklist.healthcheck]
  interval = "30s"
  kind = "exec"
- exec_command = "./hc.sh"
+ exec_command = "./cache-hc.sh"
  exec_expected_positive_output = "1"
  exec_expected_negative_output = "0"
  timeout = "5s"
@@ -231,7 +232,7 @@ bind = ":9290"  # bind host:port
 [servers.comunicaciones.healthcheck]
  interval = "30s"
  kind = "exec"
- exec_command = "./hc.sh"
+ exec_command = "./cache-hc.sh"
  exec_expected_positive_output = "1"
  exec_expected_negative_output = "0"
  timeout = "5s"
@@ -257,7 +258,7 @@ bind = ":9290"  # bind host:port
 [servers.reservations.healthcheck]
  interval = "30s"
  kind = "exec"
- exec_command = "./hc.sh"
+ exec_command = "./cache-hc.sh"
  exec_expected_positive_output = "1"
  exec_expected_negative_output = "0"
  timeout = "5s"
@@ -283,7 +284,7 @@ bind = ":9290"  # bind host:port
 [servers.detail.healthcheck]
  interval = "30s"
  kind = "exec"
- exec_command = "./hc.sh"
+ exec_command = "./cache-hc.sh"
  exec_expected_positive_output = "1"
  exec_expected_negative_output = "0"
  timeout = "5s"
@@ -309,7 +310,7 @@ bind = ":9290"  # bind host:port
 [servers.my-trips.healthcheck]
  interval = "30s"
  kind = "exec"
- exec_command = "./hc.sh"
+ exec_command = "./cache-hc.sh"
  exec_expected_positive_output = "1"
  exec_expected_negative_output = "0"
  timeout = "5s"
@@ -335,7 +336,7 @@ bind = ":9290"  # bind host:port
 [servers.nativo.healthcheck]
  interval = "30s"
  kind = "exec"
- exec_command = "./hc.sh"
+ exec_command = "./cache-hc.sh"
  exec_expected_positive_output = "1"
  exec_expected_negative_output = "0"
  timeout = "5s"
@@ -361,7 +362,7 @@ bind = ":9290"  # bind host:port
 [servers.agent-tools.healthcheck]
  interval = "30s"
  kind = "exec"
- exec_command = "./hc.sh"
+ exec_command = "./cache-hc.sh"
  exec_expected_positive_output = "1"
  exec_expected_negative_output = "0"
  timeout = "5s"
@@ -387,7 +388,7 @@ bind = ":9290"  # bind host:port
 [servers.ivr.healthcheck]
  interval = "30s"
  kind = "exec"
- exec_command = "./hc.sh"
+ exec_command = "./cache-hc.sh"
  exec_expected_positive_output = "1"
  exec_expected_negative_output = "0"
  timeout = "5s"
@@ -413,7 +414,7 @@ bind = ":9290"  # bind host:port
 [servers.encuestas.healthcheck]
  interval = "30s"
  kind = "exec"
- exec_command = "./hc.sh"
+ exec_command = "./cache-hc.sh"
  exec_expected_positive_output = "1"
  exec_expected_negative_output = "0"
  timeout = "5s"
@@ -439,7 +440,7 @@ bind = ":9290"  # bind host:port
 [servers.soluciones.healthcheck]
  interval = "30s"
  kind = "exec"
- exec_command = "./hc.sh"
+ exec_command = "./cache-hc.sh"
  exec_expected_positive_output = "1"
  exec_expected_negative_output = "0"
  timeout = "5s"
@@ -465,7 +466,7 @@ bind = ":9290"  # bind host:port
 [servers.cancel.healthcheck]
  interval = "30s"
  kind = "exec"
- exec_command = "./hc.sh"
+ exec_command = "./cache-hc.sh"
  exec_expected_positive_output = "1"
  exec_expected_negative_output = "0"
  timeout = "5s"
@@ -491,7 +492,7 @@ bind = ":9290"  # bind host:port
 [servers.cambios-nonair.healthcheck]
  interval = "30s"
  kind = "exec"
- exec_command = "./hc.sh"
+ exec_command = "./cache-hc.sh"
  exec_expected_positive_output = "1"
  exec_expected_negative_output = "0"
  timeout = "5s"
@@ -517,7 +518,7 @@ bind = ":9290"  # bind host:port
 [servers.cambios-air.healthcheck]
  interval = "30s"
  kind = "exec"
- exec_command = "./hc.sh"
+ exec_command = "./cache-hc.sh"
  exec_expected_positive_output = "1"
  exec_expected_negative_output = "0"
  timeout = "5s"
